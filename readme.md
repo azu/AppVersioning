@@ -1,4 +1,4 @@
-# AppVersioning
+# AppVersioning [![Build Status](https://travis-ci.org/azu/AppVersioning.png)](https://travis-ci.org/azu/AppVersioning)
 
 Very simple version manager of iOS application.
 
