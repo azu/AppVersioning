@@ -53,6 +53,7 @@
 		17B5C5B6C77F25C67EA9482E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5C5D5FA20893605278D55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5C999303896A6A3FEFE0B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17B5C99E936D17DA13E9755D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		17B5CC648F8698D670ED1BDF /* AppVersioningSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppVersioningSpec.m; sourceTree = "<group>"; };
 		17B5CDFAE8A638DD08C1216F /* libAppVersioning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppVersioning.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5CFB8EEEE40BBBEA8D641 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -141,6 +142,7 @@
 				17B5C5B6C77F25C67EA9482E /* readme.md */,
 				17B5C999303896A6A3FEFE0B /* Podfile */,
 				7531AD5AA8CF420C8C6E248E /* Pods-AppVersioningTests.xcconfig */,
+				17B5C99E936D17DA13E9755D /* Makefile */,
 			);
 			sourceTree = "<group>";
 		};
