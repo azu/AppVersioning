@@ -11,7 +11,6 @@
 // save key - compatible https://github.com/azu/notify-changeLog
 NSString *const kChangeLogCurrentVersion = @"kChangeLogCurrentVersion";
 
-
 @implementation AppVersioning
 // current application's version
 + (NSString *)currentVersion {
@@ -33,14 +32,20 @@ NSString *const kChangeLogCurrentVersion = @"kChangeLogCurrentVersion";
     return savedVersion;
 }
 
-+ (BOOL)compareCurrentWithSavedVersion {
++ (AppVersioningComparisonResult)compareCurrentWithSavedVersion {
     NSString *savedVersion = [self previouslySavedVersion];
     if (savedVersion == nil) {
-        return NO;
+        return AppVersionNil;
     }
-    if ([savedVersion compare:[self currentVersion] options:NSNumericSearch] == NSOrderedSame) {
-        return YES;
+
+    switch ([savedVersion compare:[self currentVersion] options:NSNumericSearch]) {
+        case NSOrderedAscending:
+            return AppVersionNotEqual;
+        case NSOrderedSame:
+            return AppVersionEqual;
+        case NSOrderedDescending:
+            return AppVersionNotEqual;
     }
-    return NO;
+    return AppVersionNil;
 }
 @end

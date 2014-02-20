@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		17B5C2612AFD996287B20E18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C5D5FA20893605278D55 /* Foundation.framework */; };
 		17B5C2AA2146757383F66856 /* AppVersioning.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 17B5C4BDD6B10C451CFFB048 /* AppVersioning.h */; };
+		17B5C33A0CA122A8F884EE7B /* AppVersioningSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC648F8698D670ED1BDF /* AppVersioningSpec.m */; };
 		17B5C3793E2A37D5DFE8762C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C45DD3339D068637E93C /* UIKit.framework */; };
 		17B5C613B6D3470E35726B82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C0E17AFAAA4A641ABBA6 /* InfoPlist.strings */; };
 		17B5C6311F47F13586EDBC8F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CFB8EEEE40BBBEA8D641 /* XCTest.framework */; };
-		17B5C7DBDEC49A1D840C387B /* AppVersioningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C388F47EA09939607FBC /* AppVersioningTests.m */; };
 		17B5C9512A10470F27BBE116 /* AppVersioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C01859F74D94455FBD83 /* AppVersioning.m */; };
 		17B5C98B5BE35F700D2531D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C5D5FA20893605278D55 /* Foundation.framework */; };
 		17B5CC927FCFA7FCF0E40656 /* libAppVersioning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CDFAE8A638DD08C1216F /* libAppVersioning.a */; };
+		5AE52BE5C9194E52BED5011B /* libPods-AppVersioningTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FDA6B953934B52A1AF4105 /* libPods-AppVersioningTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,13 +48,16 @@
 		17B5C1612464916E31707AB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C1CAAC51A8B0755EBF3A /* AppVersioning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppVersioning-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C2387659065E679D1CCB /* AppVersioningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppVersioningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17B5C388F47EA09939607FBC /* AppVersioningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppVersioningTests.m; sourceTree = "<group>"; };
 		17B5C45DD3339D068637E93C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17B5C4BDD6B10C451CFFB048 /* AppVersioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppVersioning.h; sourceTree = "<group>"; };
 		17B5C5B6C77F25C67EA9482E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5C5D5FA20893605278D55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17B5C999303896A6A3FEFE0B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17B5CC648F8698D670ED1BDF /* AppVersioningSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppVersioningSpec.m; sourceTree = "<group>"; };
 		17B5CDFAE8A638DD08C1216F /* libAppVersioning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppVersioning.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5CFB8EEEE40BBBEA8D641 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7531AD5AA8CF420C8C6E248E /* Pods-AppVersioningTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppVersioningTests.xcconfig"; path = "Pods/Pods-AppVersioningTests.xcconfig"; sourceTree = "<group>"; };
+		75FDA6B953934B52A1AF4105 /* libPods-AppVersioningTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppVersioningTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				17B5C98B5BE35F700D2531D9 /* Foundation.framework in Frameworks */,
 				17B5C3793E2A37D5DFE8762C /* UIKit.framework in Frameworks */,
 				17B5CC927FCFA7FCF0E40656 /* libAppVersioning.a in Frameworks */,
+				5AE52BE5C9194E52BED5011B /* libPods-AppVersioningTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				17B5CD76F2F5674B83EDD040 /* Supporting Files */,
-				17B5C388F47EA09939607FBC /* AppVersioningTests.m */,
+				17B5CC648F8698D670ED1BDF /* AppVersioningSpec.m */,
 			);
 			path = AppVersioningTests;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 				17B5C5D5FA20893605278D55 /* Foundation.framework */,
 				17B5CFB8EEEE40BBBEA8D641 /* XCTest.framework */,
 				17B5C45DD3339D068637E93C /* UIKit.framework */,
+				75FDA6B953934B52A1AF4105 /* libPods-AppVersioningTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +139,8 @@
 				17B5CEE190E535FA62BC7EF5 /* AppVersioning */,
 				17B5CA16FBA7C5E1F9F512F3 /* AppVersioningTests */,
 				17B5C5B6C77F25C67EA9482E /* readme.md */,
+				17B5C999303896A6A3FEFE0B /* Podfile */,
+				7531AD5AA8CF420C8C6E248E /* Pods-AppVersioningTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B5C89C4EA57F4553125756 /* Build configuration list for PBXNativeTarget "AppVersioningTests" */;
 			buildPhases = (
+				DF5852A6712A4737AD0D0AF3 /* Check Pods Manifest.lock */,
 				17B5CD5C5DC53FDEDED208BC /* Sources */,
 				17B5CB78784775A81C268082 /* Frameworks */,
 				17B5CE72ACFC681DD86974C1 /* Resources */,
+				6270AFDDF5064D60911BB5D8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +230,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6270AFDDF5064D60911BB5D8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AppVersioningTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5852A6712A4737AD0D0AF3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17B5CB819566D97101F97810 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -233,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B5C7DBDEC49A1D840C387B /* AppVersioningTests.m in Sources */,
+				17B5C33A0CA122A8F884EE7B /* AppVersioningSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +342,7 @@
 		};
 		17B5C924D29822CC30C38C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7531AD5AA8CF420C8C6E248E /* Pods-AppVersioningTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -308,6 +352,7 @@
 				GCC_PREFIX_HEADER = "AppVersioning/AppVersioning-Prefix.pch";
 				INFOPLIST_FILE = "AppVersioningTests/AppVersioningTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -370,6 +415,7 @@
 		};
 		17B5CFE5DA4030F35B2014FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7531AD5AA8CF420C8C6E248E /* Pods-AppVersioningTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -379,6 +425,7 @@
 				GCC_PREFIX_HEADER = "AppVersioning/AppVersioning-Prefix.pch";
 				INFOPLIST_FILE = "AppVersioningTests/AppVersioningTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -393,6 +440,7 @@
 				17B5CC779284E18142376D98 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B5C355E6B7483666049DD6 /* Build configuration list for PBXProject "AppVersioning" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +458,7 @@
 				17B5C924D29822CC30C38C36 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

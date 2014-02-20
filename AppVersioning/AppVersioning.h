@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, AppVersioningComparisonResult) {
+    AppVersionNil = -1L, // nil
+    AppVersionEqual,   // match
+    AppVersionNotEqual// mismatch
+};
+
 @interface AppVersioning : NSObject
 + (NSString *)currentVersion;
 
@@ -15,5 +21,5 @@
 
 + (NSString *)previouslySavedVersion;
 
-+ (BOOL)compareCurrentWithSavedVersion;
++ (AppVersioningComparisonResult)compareCurrentWithSavedVersion;
 @end
