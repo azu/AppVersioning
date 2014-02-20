@@ -17,13 +17,21 @@ pod 'AppVersioning'
 ## Usage
 
 ``` objc
+typedef NS_ENUM(NSInteger, AppVersioningComparisonResult) {
+    AppVersionNil = -1L, // nil
+    AppVersionEqual,   // match
+    AppVersionNotEqual// mismatch
+};
+
+@interface AppVersioning : NSObject
 + (NSString *)currentVersion;
 
 + (void)saveCurrentVersion;
 
 + (NSString *)previouslySavedVersion;
 
-+ (BOOL)compareCurrentWithSavedVersion;
++ (AppVersioningComparisonResult)compareCurrentWithSavedVersion;
+@end
 ```
 
 
