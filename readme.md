@@ -26,6 +26,17 @@ pod 'AppVersioning'
 + (BOOL)compareCurrentWithSavedVersion;
 ```
 
+
+### Save Current Version When Close Application
+
+Write to `AppDelegate` .
+
+```objc
+- (void)applicationDidEnterBackground:(UIApplication *) application {
+    [AppVersioning saveCurrentVersion];
+}
+```
+
 ## Contributing
 
 1. Fork it!
