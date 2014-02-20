@@ -1,6 +1,6 @@
 rvm: 1.9.3
-language: objective-c
-before_install:
-    - gem install xcpretty
-script:
-    - make test | xcpretty -c
+                             language: objective-c
+                             before_install:
+                                 - gem install xcpretty
+                             script:
+                                 - make test | xcpretty -c

@@ -18,9 +18,9 @@ pod 'AppVersioning'
 
 ``` objc
 typedef NS_ENUM(NSInteger, AppVersioningComparisonResult) {
-    AppVersionNil = -1L, // nil
-    AppVersionEqual,   // match
-    AppVersionNotEqual// mismatch
+    AppVersioningNil = -1L, // nil
+    AppVersioningEqual,   // match
+    AppVersioningNotEqual// mismatch
 };
 
 @interface AppVersioning : NSObject

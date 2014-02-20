@@ -35,17 +35,17 @@ NSString *const kChangeLogCurrentVersion = @"kChangeLogCurrentVersion";
 + (AppVersioningComparisonResult)compareCurrentWithSavedVersion {
     NSString *savedVersion = [self previouslySavedVersion];
     if (savedVersion == nil) {
-        return AppVersionNil;
+        return AppVersioningNil;
     }
 
     switch ([savedVersion compare:[self currentVersion] options:NSNumericSearch]) {
         case NSOrderedAscending:
-            return AppVersionNotEqual;
+            return AppVersioningNotEqual;
         case NSOrderedSame:
-            return AppVersionEqual;
+            return AppVersioningEqual;
         case NSOrderedDescending:
-            return AppVersionNotEqual;
+            return AppVersioningNotEqual;
     }
-    return AppVersionNil;
+    return AppVersioningNil;
 }
 @end

@@ -17,8 +17,8 @@ SPEC_BEGIN(AppVersioningSpec)
             beforeEach(^{
                 [AppVersioning stub:@selector(previouslySavedVersion) andReturn:nil];
             });
-            it(@"should return AppVersionNil", ^{
-                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersionNil)];
+            it(@"should return AppVersioningNil", ^{
+                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersioningNil)];
             });
         });
         context(@"when saved 1.1 and current is 1.1", ^{
@@ -26,8 +26,8 @@ SPEC_BEGIN(AppVersioningSpec)
                 [AppVersioning stub:@selector(currentVersion) andReturn:@"1.1"];
                 [AppVersioning saveCurrentVersion];
             });
-            it(@"should return AppVersionEqual", ^{
-                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersionEqual)];
+            it(@"should return AppVersioningEqual", ^{
+                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersioningEqual)];
             });
         });
         context(@"when saved 1.1 and current is 1.2", ^{
@@ -35,8 +35,8 @@ SPEC_BEGIN(AppVersioningSpec)
                 [AppVersioning stub:@selector(previouslySavedVersion) andReturn:@"1.1"];
                 [AppVersioning stub:@selector(currentVersion) andReturn:@"1.2"];// <=current
             });
-            it(@"should return AppVersionEqual", ^{
-                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersionNotEqual)];
+            it(@"should return AppVersioningEqual", ^{
+                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersioningNotEqual)];
             });
         });
         context(@"when saved 9.9.1 and current is 1.0", ^{
@@ -44,8 +44,8 @@ SPEC_BEGIN(AppVersioningSpec)
                 [AppVersioning stub:@selector(previouslySavedVersion) andReturn:@"9.9.1"];
                 [AppVersioning stub:@selector(currentVersion) andReturn:@"1.0"];// <=current
             });
-            it(@"should return AppVersionEqual", ^{
-                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersionNotEqual)];
+            it(@"should return AppVersioningEqual", ^{
+                [[@([AppVersioning compareCurrentWithSavedVersion]) should] equal:@(AppVersioningNotEqual)];
             });
         });
     });
